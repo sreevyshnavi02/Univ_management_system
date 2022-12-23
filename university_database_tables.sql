@@ -6,15 +6,14 @@ USE univ;
 
 -- password to allow the hod to view the dept data - data of students, courses, faculty and to update certain fields
 create table u_dept(
-    dept_id float(2, 0) PRIMARY KEY,
+    dept_id varchar(5) PRIMARY KEY,
     password varchar(20),
     dept_name varchar(100) NOT null
 );
 
-
 create table u_prgm(
     prgm_id float(2, 0) PRIMARY key,
-    dept_id float(2, 0),
+    dept_id varchar(5),
     constraint fk_dept_id foreign key(dept_id) references u_dept(dept_id),
     prgm_name varchar(100)
 );
@@ -31,20 +30,19 @@ references u_dept(dept_id) on delete CASCADE;
 
 create table u_course(
     course_code varchar(10) PRIMARY KEY,
-    course_name varchar(50),
+    course_name VARCHAR(200),
     course_catg varchar(5),
-    prereq varchar(10),
-    constraint fk_prereq foreign key(prereq) references u_course(course_code),
+    -- prereq varchar(10),
+    -- constraint fk_prereq foreign key(prereq) references u_course(course_code),
     credits float(3, 2),
-    dept_id float(2, 0),
+    dept_id varchar(5),
     foreign key(dept_id) references u_dept(dept_id)
 );
 
 
 
 alter table u_course
-add course_type varchar(20),
-add CONSTRAINT check_course_type check(course_type in ('Theory', 'Practical'));
+add course_type varchar(20);
 
 
 -- compulsory courses part of each programme
@@ -79,7 +77,7 @@ create table u_faculty(
     faculty_id varchar(10) PRIMARY key,
     password varchar(10),
     fname varchar(40),
-    dept_id float(2, 0),
+    dept_id varchar(5),
     constraint fk_dept_id2 foreign key(dept_id) references u_dept(dept_id),
     designation varchar(50)
 );
@@ -93,18 +91,17 @@ add email varchar(100);
 create table u_student(
     regno varchar(10) PRIMARY key,
     password varchar(10),
-    sname varchar(40),
+    sname VARCHAR(100),
     gender char,
-    dob date,
+    dob VARCHAR(15),
     yoj float(4, 0),
     credits_earned float(5, 2),
     prgm_id float(2, 0),
-    constraint fk_prgm_id3 foreign key(prgm_id) references u_prgm(prgm_id),
-    guide_id varchar(10),  -- for a PhD student 
-    constraint fk_guide_id foreign key(guide_id) references u_faculty(faculty_id),
-    entry_mode varchar(10),
-    constraint entry_mode_check check(entry_mode in ('Regular', 'Lateral'))
+    constraint fk_prgm_id3 foreign key(prgm_id) references u_prgm(prgm_id)
+    -- guide_id varchar(10),  -- for a PhD student 
+    -- constraint fk_guide_id foreign key(guide_id) references u_faculty(faculty_id)
 );
+
 
 alter table U_STUDENT
 add curr_sem INT;
@@ -136,7 +133,7 @@ alter table u_gpa_cgpa
 add num_of_credits_earned float(4, 1); -- to store the float of credits earned in that semester alone
 
 
-create table u_enrollment(
+create table u_course_regn(
     regno varchar(10),
     constraint fk_regno foreign key(regno) references u_student(regno),
     course_code varchar(10),
@@ -153,18 +150,18 @@ create table u_enrollment(
 );
 
 
-create table course_offering(
-    course_code varchar(10),
-    constraint fk_course_code4 foreign key(course_code) references u_course(course_code),
-    dept_id float(2, 0),
-    constraint fk_dept_id1 foreign key(dept_id) references u_dept(dept_id),
-    faculty_id varchar(10),
-    constraint fk_faculty_id1 foreign key(faculty_id) references u_faculty(faculty_id)
-);
+-- create table course_offering(
+--     course_code varchar(10),
+--     constraint fk_course_code4 foreign key(course_code) references u_course(course_code),
+--     dept_id varchar(5),
+--     constraint fk_dept_id1 foreign key(dept_id) references u_dept(dept_id),
+--     faculty_id varchar(10),
+--     constraint fk_faculty_id1 foreign key(faculty_id) references u_faculty(faculty_id)
+-- );
 
 
-alter table course_offering
-ADD primary key (course_code, dept_id, faculty_id);
+-- alter table course_offering
+-- ADD primary key (course_code, dept_id, faculty_id);
 
 
 
@@ -255,12 +252,3 @@ create table academic_calendar(
 );
 
 
-
-
-
-
-
-
-
-
-   

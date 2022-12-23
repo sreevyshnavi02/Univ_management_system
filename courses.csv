@@ -1,0 +1,475 @@
+course_code,course_name,course_catg,credits,dept_id,course_type
+CY201,Chemistry   ,BSC,4,CY,TY
+CY202,Chemistry Laboratory,BSC,1.5,CY,LB
+FY201,Induction Programme,MCC,0,FY,MC
+HS201,English For Communication,HSM,3,HS,TY
+MA201,Mathematics-I,BSC,4,MA,TY
+MA202,Mathematics-II,BSC,4,MA,TY
+ME201,Workshop And Manufacturing Practice,ESC,1.5,ME,LB
+PH201,Physics,BSC,4,PH,TY
+PH202,Physics Laboratory,BSC,1.5,PH,LB
+CE201,Environmental Science,MCC,0,CE, MC
+CS201,Programming For Problem Solving,ESC,3,CS,TY
+CS202,Programming Laboratory,ESC,1.5,CS,LB
+EE201,Basic Electrical Engineering,ESC,4,EE,TY
+EE202,Basic Electrical Engineering Laboratory,ESC,1.5,EE,LB
+ME202,Engineering Graphics And Computer Aided Drawing,ESC,3,ME,TY
+CE202,Engineering Mechanics,ESC,4,CE,TY
+CE203,Engineering Geology,PCC,2,CE,TY
+CE204,Fluid Mechanics,PCC,3,CE,TY
+CE205,Building Technology,PCC,3,CE,TY
+CE206,Surveying And Geomatics,PCC,3,CE,TY
+CE207,Computer-Aided Civil Engineering Drawing,ESC,1.5,CE,LB
+CE208,Suveying Laboratory,PCC,1.5,CE,LB
+CEH01,Eco-Friendly Building Materials And Construction,PCC,4,CE,TY
+CEM01,Materials And Technologies Of Building Construction,PCC,4,CE,TY
+SH201,Biology For Engineers,BSC,2,CY,TY
+CE233,Engineering Mechanics And Mechanics Of Solids,ESC,4,CE,TY
+CH201,Momentum Transfer,PCC,4,CH,TY
+CH202,Process Calculations,PCC,4,CH,TY
+CHH01,Introduction To Frontiers Of Chemical Engineering,PCC,4,CH,TY
+CHM01,Process Engineering Principles And Calculations,PCC,4,CH,TY
+CY203,Chemistry For Chemical Engineering,BSC,4,CY,TY
+CY204,Chemistry Lab For Chemical Engineering,BSC,1.5,CY,LB
+CS203,Computer Organization And Architecture,PCC,4,CS,TY
+CS204,Data Structures,PCC,3,CS,TY
+CS205,Object Oriented Programming Languages,PCC,3,CS,TY
+CS206,Data Structures Laboratory,PCC,1.5,CS,LB
+CS207,Object Oriented Programming Languages Laboratory,PCC,1.5,CS,LB
+CSH01,Human Computer Interaction,PCC,4,CS,TY
+CSM01,Data Structures And Algorithms,PCC,4,CS,TY
+EC235,Electronic Devices And Digital Systems,ESC,3,EC,TY
+EC236,Electronic Devices And Digital Systems Laboratory,ESC,1.5,EC,LB
+CS234,Data Structures And Object-Oriented Programming,ESC,3,CS,TY
+CS235,Data Structures And Object-Oriented Programming Laboratory,ESC,1.5,CS,LB
+EC201,Circuits And Networks,PCC,3,EC,TY
+EC202,Electronic Devices And Circuits,PCC,3,EC,TY
+EC203,Electromagnetic Waves And Fields,PCC,3,EC,TY
+EC204,Digital System Design,PCC,3,EC,TY
+EC205,Electronic Devices And Networks Laboratory,PCC,1.5,EC,LB
+ECH01,Semiconductor Technology And Design,PCC,4,EC,TY
+ECM01,Electron Devices,PCC,4,EC,TY
+MA205,"Linear Algebra, Numerical Methods And Random Processes",BSC,4,MA,TY
+EE203,Electrical Circuit Analysis,PCC,4,EE,TY
+EE204,Electromagnetic Fields,PCC,3,EE,TY
+EE205,Electronic Devices And Circuits,PCC,3,EE,TY
+EE206,Electrical Machines-I,PCC,3,EE,TY
+EE207,Signals And Systems,PCC,3,EE,TY
+EE208,Electronics Laboratory-I,PCC,1.5,EE,LB
+EE209,Electrical Machines Laboratory-I,PCC,1.5,EE,LB
+EEH01,Energy Engineering,PCC,4,EE,TY
+EEM01,Electrical Circuits And Measurements,PCC,4,EE,TY
+MA204,"Transforms, Partial Differential Equations And Statistics",BSC,4,MA,TY
+EI201,Circuit Theory,PCC,4,EI,TY
+EI202,Electronic Circuits,PCC,3,EI,TY
+EI203,Electronic Design And Fabrication,PCC,4,EI,TY
+EI204,Digital Logic Theory And Design,PCC,3,EI,TY
+EI205,Electronic Circuits Lab,PCC,1.5,EI,LB
+EI206,Electronic Design And Fabrication Lab,PCC,1,EI,LB
+EIH01,Measurement Data Analysis,PCC,4,EI,TY
+EIM01,Transducer Engineering,PCC,4,EI,TY
+EC233,Electronic Circuits,ESC,3,EC,TY
+IT201,Digital System Design,PCC,3,IT,TY
+IT202,Data Structures,PCC,3,IT,TY
+IT203,Object Oriented Programming  Using C++ & Java,PCC,3,IT,TY
+IT204,Digital Laboratory,PCC,1.5,IT,LB
+IT205,Data Structures Laboratory,PCC,1.5,IT,LB
+IT206,Object Oriented Programming Laboratory (C++ & Java),PCC,1.5,IT,LB
+ITH01,Programming Paradigms,PCC,4,IT,TY
+ITM01,Data Structures And Algorithms,PCC,4,IT,TY
+MA204,"Transforms, Partial Differential Equations And Statistics",BSC,4,MA,TY
+ME203,Engineering Mechanics,ESC,4,ME,TY
+ME204,Fluid Mechanics And Hydraulic Machines,PCC,4,ME,TY
+ME205,Engineering Thermodynamics,PCC,4,ME,TY
+ME206,Materials Technology,PCC,3,ME,TY
+ME207,Machine Drawing,PCC,3,ME,TY
+MEH01,Engineering Optimization ,PCC,4,ME,TY
+MEM01,Heat Power Engineering,PCC,4,ME,TY
+CE209,Disaster Management,PCC,3,CE,TY
+CE210,Hydraulics Engineering,PCC,3,CE,TY
+CE211,Concrete Technology,PCC,3,CE,TY
+CE212,Basics Of Solid Mechanics,PCC,4,CE,TY
+CE213,Materials Testing And Evaluation Laboratory-I,PCC,1.5,CE,LB
+CE214,Fluid Mechanics Laboratory,PCC,1.5,CE,LB
+CEH02,Coastal And Off Shore Structures,PCC,4,CE,TY
+CEM02,Basics Of Surveying,PCC,4,CE,TY
+EI212,Instrumentation And Sensor Technologies For Civil Engineering Applications,ESC,3,EI,TY
+MA203, Numerical Methods And Statistics,BSC,4,MA,TY
+SH202,Indian Constitution,MCC,0,HS,-
+CH203,Process Heat Transfer,PCC,4,CH,TY
+CH204,Mechanical Operations,PCC,3,CH,TY
+CH205,Chemical Engineering Thermodynamics,PCC,4,CH,TY
+CH206,Mass Transfer?I,PCC,4,CH,TY
+CH207,Chemical Engineering Lab?I,PCC,1.5,CH,LB
+CHH02,Special Topics In Chemical Engineering?I,PCC,4,CH,TY
+CHM02,Fluid Flow And Particle Technology,PCC,4,CH,TY
+EC234,Elements Of Electronics,ESC,3,EC,TY
+CS208,Operating Systems,PCC,3,CS,TY
+CS209,Design And Analysis Of Algorithms,PCC,3,CS,TY
+CS210,Database Management Systems,PCC,3,CS,TY
+CS211,Software Engineering,PCC,4,CS,TY
+CS212,Operating System Laboratory,PCC,1.5,CS,LB
+CS213,Design And Analysis Of Algorithms Laboratory,PCC,1.5,CS,LB
+CS214,Database Management Systems Laboratory,PCC,1.5,CS,LB
+CSH02,Advanced Data Structure And Algorithms,PCC,4,CS,TY
+CSM02,Principles Of Operating Systems,PCC,4,CS,TY
+MA206,Mathematics For Computing,BSC,4,MA,TY
+EC206,Transmission Lines And Waveguides,PCC,3,EC,TY
+EC207,Electronic Circuit Design,PCC,3,EC,TY
+EC208,Signals And Systems,PCC,4,EC,TY
+EC209,Analog Communication,PCC,3,EC,TY
+EC210,Digital System Design Laboratory,PCC,1.5,EC,LB
+EC211,Electronic Circuit Design Laboratory,PCC,1.5,EC,LB
+EC212,Analog Communication Laboratory,PCC,1.5,EC,LB
+ECH02,Medical Electronics And Informatics,PCC,4,EC,TY
+ECM02,Analog And Digital Circuits,PCC,4,EC,TY
+ECY02,Computer Architecture And Organization,PEC,3,EC,TY
+CS234,Data Structures And Object Oriented Programming,ESC,3,CS,TY
+CS235,Data Structures And Object Oriented Programming Laboratory,ESC,1.5,CS,LB
+EE210,Analog Electronics,PCC,3,EE,TY
+EE211,Pulse And Digital Circuits,PCC,3,EE,TY
+EE212,Electrical Machines-II,PCC,3,EE,TY
+EE213,Electronics Laboratory-II,PCC,1.5,EE,LB
+EE214,Electrical Machines Laboratory-II,PCC,1.5,EE,LB
+EEH02,Network Analysis And Synthesis,PCC,4,EE,TY
+EEM02,Analog And Digital Electronics,PCC,4,EE,TY
+EI207,Linear Integrated Circuits,PCC,3,EI,TY
+EI208,Electrical And Electronics Instruments,PCC,3,EI,TY
+EI209,Transducers And Measurements System,PCC,3,EI,TY
+CS234,Data Structures And Oops,ESC,3,CS,TY
+EI210,Linear And Integrated Circuits Lab,PCC,1.5,EI,LB
+CS235,Data Structures And Oops Lab,ESC,1.5,CS,LB
+EI211,Transducers And Measurements System Lab,PCC,1.5,EI,LB
+EIH02,Design Of Sensors And Transducers,PCC,4,EI,TY
+EIM02,Measuring Instruments And Testing,PCC,4,EI,TY
+IT207,Operating Systems,PCC,3,IT,TY
+IT208,Computer Architecture,PCC,3,IT,TY
+IT209,Microprocessors And Applications,PCC,3,IT,TY
+IT210,Design And Analysis Of Algorithms,PCC,3,IT,TY
+IT211,Operating Systems Laboratory With Unix / Linux,PCC,1.5,IT,LB
+IT212,Microprocessor Laboratory,PCC,1.5,IT,LB
+IT213,Design And Analysis Of Algorithms Laboratory,PCC,1.5,IT,LB
+ITH02,Advanced Data Structures,PCC,4,IT,TY
+ITM02,Java And Internet Programming,PCC,4,IT,TY
+EC234,Elements Of Electronics,ESC,3,EC,TY
+ME208,Mechanics Of Solids,ESC,4,ME,TY
+ME209,Thermal Engineering?I,PCC,4,ME,TY
+ME210,Machining Technology,PCC,3,ME,TY
+ME211,Kinematics Of  Machines,PCC,4,ME,TY
+ME212,Mechanical Engineering Lab ?I ( Fluid Mechanics And Machines/ Material Technology /Machine Shop),PCC,1.5,ME,LB
+MEH02,Production Drawing And Cost Estimation,PCC,4,ME,TY
+MEM02,Manufacturing Technology,PCC,4,ME,TY
+CE215,Mechanics Of Materials,PCC,4,CE,TY
+CE216,Environmental Engineering,PCC,3,CE,TY
+CE217,Transportation Engineering,PCC,3,CE,TY
+CE218,Hydrology Water Resources And Irrigation Engineering,PCC,4,CE,TY
+CE219,Materials Testing And Evaluation Laboratory-Ii (Highway And Concrete Laboratory,PCC,1.5,CE,LB
+CE220,Environmental Engineering Laboratory,PCC,1.5,CE,LB 
+CEH03,Design Of Pre-Stressed Concrete Structures,PCC,4,CE,TY
+CEM03,Mechanics Of Solids And Fluids,PCC,4,CE,TY
+CEY01,Failure Assessment And Rehabilitation Of Structures,PEC,3,CE,TY
+EP201,Entrepreneurship,PAC,2,IEDC,TY
+CH208,Mass Transfer?II,PCC,4,CH,TY
+CH209,Chemical Reaction Engineering?I ,PCC,4,CH,TY
+CH210,Chemical Process Industries,PCC,3,CH,TY
+CH211,Chemical Engineering Lab?II,PCC,1.5,CH,LB
+CHH03,Special Topics In Chemical Engineering?II,PCC,4,CH,TY
+CHM03,Heat Transfer And Thermodynamics,PCC,4,CH,TY
+CHY05,Energy Technology And Management,PEC,3,CH,TY
+CS215,Platform Technologies,PCC,3,CS,TY
+CS216,Computer Networks,PCC,3,CS,TY
+CS217,Automata Theory And Compiler Design,PCC,4,CS,TY
+CS218,Platform Technologies Laboratory,PCC,1.5,CS,LB
+CS219,Computer Networks Laboratory,PCC,1.5,CS,LB
+CSH03,Advanced Software Design,PCC,4,CS,TY
+CSM03,Principles Of Database Management,PCC,4,CS,TY
+CSY03,Python Programming,PEC,3,CS,TY
+CS236,Microprocessors And Microcontrollers,ESC,3,CS,TY
+CS237,Microprocessors And Microcontrollers Laboratory,ESC,1.5,CS,LB
+EC213,Digital Signal Processing And DSP Processors,PCC,4,EC,TY
+EC214,Digital Communication,PCC,3,EC,TY
+EC215,Digital Signal Processing Laboratory,PCC,1.5,EC,LB
+EC216,Digital Communication Laboratory,PCC,1.5,EC,LB
+ECH03,Advanced Digital System Design,PCC,4,EC,TY
+ECM03,Communication Systems,PCC,4,EC,TY
+ECY03,Antennas And Wave Propagation,PEC,3,EC,TY
+EE215,Analog And Digital Integrated Circuits,PCC,3,EE,TY
+EE216,Power Electronics,PCC,3,EE,TY
+EE217,Measurement And Instrumentation,PCC,3,EE,TY
+EE218,Transmission And Distribution,PCC,3,EE,TY
+EE219,Control Systems,PCC,4,EE,TY
+EE220,Electronics Laboratory-III,PCC,1.5,EE,LB
+EE221,Measurement And Control Laboratory,PCC,1.5,EE,LB
+EEH03,Electrical Machine Design,PCC,4,EE,TY
+EEM03,Electrical Machines And Control,PCC,4,EE,TY
+EI213,Industrial Instrumentation,PCC,4,EI,TY
+EI214,Microprocessors And Applications,PCC,3,EI,TY
+EI215,Control Systems,PCC,4,EI,TY
+EP201,Entrepreneurship,PAC,2,IEDC,TY
+EI216,Instrumentation System Design Lab,PCC,1.5,EI,TY
+EI217,VLSI Lab,PCC,1.5,EI,LB
+EI218,Microprocessors And Applications Lab,PCC,1.5,EI,LB
+EIH03,Field Instruments For Process Control,PCC,4,EI,TY
+EIM03,Measurements In Process Industries,PCC,4,EI,TY
+IT214,Database Management System,PCC,3,IT,TY
+IT215,Resource Management And Graph Theory,PCC,4,IT,TY
+IT216,Computer Networks,PCC,4,IT,TY
+IT217,Information Coding Techniques  ,PEC,3,IT,TY
+IT218,Database Management System Laboratory,PCC,1.5,IT,LB
+IT219,Computer Networks Laboratory,PCC,1.5,IT,LB
+IT220,Information Coding Techniques  Laboratory,PCC,1.5,IT,LB
+ITH03,Biometrics,PCC,4,IT,TY
+ITM03,Data Communication And Computer Networks ,PCC,4,IT,TY
+ITY01,Compiler Design,PEC,3,IT,TY
+ME213,Heat And Mass Transfer,PCC,4,ME,TY
+ME214,Manufacturing Processes,PCC,4,ME,TY
+ME215,Dynamics Of Machines,PCC,4,ME,TY
+ME216,Mechanical Engineering Lab?II (Dynamics Lab/  Special Machines / Heat Transfer Lab),PCC,1.5,ME,LB
+MEH03,Computational Biological Thermo-Fluid Mechanics,PCC,4,ME,TY
+MEM03,Machine Design ,PCC,4,ME,TY
+MEY01,Energy And Environmental Engineering,PEC,3,ME,TY
+MEY04,Automobile Engineering,PEC,3,ME,TY
+MEY06,Fluid Power Automation,PEC,3,ME,TY
+CE221,Structural Analysis,PCC,4,CE,TY
+CE222,Structural Concrete Design,PCC,4,CE,TY
+CE223,Geotechnical Engineering,PCC,3,CE,TY
+CE224,Estimation Costing And Valuation,PCC ,3,CE,TY
+CE225,Geotechnical Engineering Laboratory,PCC,1.5,CE,LB
+CE226,Structural Mechanics Laboratory,PCC,1.5,CE,LB
+CEH04,Environmental Impact Assessment And Audit,PCC,4,CE,TY
+CEM04,Pavement Materials And Ground Improvement Techniques,PCC,4,CE,TY
+CEY04,Construction Management,PEC,3,CE,TY
+SH203,Essence Of Indian Traditional Knowledge,MCC,0,HS,-
+CH212,Chemical Reaction Engineering?II,PCC,4,CH,TY
+CH213,Computational Methods And Practice  In Chemical Engineering ,PCC,4,CH,TY
+CH214,Chemical Engineering Lab?III,PCC,1.5,CH,LB
+CHH04,Special Topics In Chemical Engineering-III,PCC,4,CH,TY
+CHM04,Fundamentals Of Mass Transfer And Separations,PCC,4,CH,TY
+CHY06,Petroleum Refinery Engineering,PCC,3,CH,TY
+CHY07,Nuclear Technology,PEC,3,CH,TY
+CHY10,Fluidization Engineering,PEC,3,CH,TY
+CS220,Microprocessors And Microcontrollers,PCC,3,CS,TY
+CS221,Web Technologies,PCC,3,CS,TY
+CS222,Information Security,PCC,4,CS,TY
+CS223,Microprocessors And Microcontrollers Laboratory,PCC,1.5,CS,LB
+CS224,Web Technologies Laboratory,PCC,1.5,CS,LB
+CSH04,Advanced Security Concepts,PCC,4,CS,TY
+CSM04,Internet Programming ,PCC,4,CS,TY
+CSY05,Internet Of Things,PEC,3,CS,TY
+CSY06,Mobile Application Development,PEC,3,CS,TY
+EC217,Microwave And Optical Engineering,PCC,3,EC,TY
+EC218,Data Communication Networks,PCC,3,EC,TY
+EC219,VLSI Design,PCC,3,EC,TY
+EC220,Microwave And Optical Engineering Laboratory,PCC,1.5,EC,LB
+EC221,Data Communication Networks Laboratory,PCC,1.5,EC,LB
+EC222,VLSI Design Laboratory,PCC,1.5,EC,LB
+ECH04,Simulation Of Communication Systems,PCC,4,EC,TY
+ECM04,Basic Vlsi Design ,PCC,4,EC,TY
+ECY05,Control Systems Engineering,PEC,3,EC,TY
+EE222,Power System Analysis,PCC,4,EE,TY
+EE223,Microprocessors And Microcontrollers,PCC,3,EE,TY
+EE224,Microprocessors And Microcontrollers Laboratory,PCC,1.5,EE,LB
+EE225,Power Electronics Laboratory,PCC,1.5,EE,LB
+EEH04,Advanced  Control Systems,PCC,4,EE,TY
+EEM04,Power Electronics And Drives,PCC,4,EE,TY
+EEY01,Electrical Safety And Quality Management,PEC,3,EE,TY
+EEY03,Special Electrical Machines,PEC,3,EE,TY
+EI219,Process Control,PCC,4,EI,TY
+EI220,Embedded System Design ,PCC,4,EI,TY
+EI221,Robotics And Automation,PCC,3,EI,TY
+HS202,Industrial Economics And Management,HSM,3,HS,TY
+EI222,Process Control Lab,PCC,1.5,EI,LB
+EI223,Virtual Instrumentation Lab,PCC,1.5,EI,LB
+EI224,Embedded System Design Lab,PCC,1.5,EI,LB
+EIH04,Advanced Control Engineering,PCC,4,EI,TY
+EIM04,Essentials Of Control Engineering ,PCC,4,EI,TY
+IT221,Software Engineering,PCC,3,IT,TY
+IT222,Automata And Formal Languages,PCC,4,IT,TY
+IT223,Web Technology ,PCC,3,IT,TY
+IT224,Web Technology Laboratory,PCC,1.5,IT,LB
+IT225,Software Engineering Laboratory,PCC,1.5,IT,LB
+ITH04,Advanced Java Programming,PCC,4,IT,TY
+ITM04,Information Systems And Organization,PCC,4,IT,TY
+ITY07,Mobile Computing,PEC,3,IT,TY
+ITY08,Image Processing,PEC,3,IT,TY
+ME217,Thermal Engineering?II,PCC,4,ME,TY
+ME218,Metrology And Measurements,PCC,4,ME,TY
+ME219,Design Of Machine Elements,PCC,4,ME,TY
+ME220,Seminar,PAC,1,ME,-
+ME221,"Mechanical Engineering Lab?III (Thermal Engineering Lab /  Measurements Lab /  Modelling, Simulation And Analysis Lab)",PCC,1.5,ME,LB
+MEH04,Product Design And Development,PCC,4,ME,TY
+MEM04,Quality Control And Improvement Techniques,PCC,4,ME,TY
+MEY08,Maintenance And Safety Engineering,PEC,3,ME,TY
+MEY09,Computer Aided Design,PEC,3,ME,TY
+EIY01,Signals And Systems,PEC,3,EI,TY
+EIY02,Visual Programming For Instrumentation Engineers,PEC,3,EI,TY
+EIY03,Industrial Electronics,PEC,3,EI,TY
+EIY04,Virtual Instrumentation,PEC,3,EI,TY
+EIY05,Digital Signal Processing,PEC,3,EI,TY
+EIY06,Applied Soft Computing ,PEC,3,EI,TY
+CE227,Computer Aided Analysis And Design Structures,PCC,1.5,CE,LB
+CE228,Seminar,PAC,1,CE,-
+CE229,"Professional Practice, Law And Ethics",MCC,0,CE,-
+CEH05,Design Of Steel Structural Elements,PCC,4,CE,TY
+CEM05,Basics Of Structural Design,PCC,4,CE,TY
+CEY12,Bridge Engineering,PEC,3,CE,TY
+CEY13,Geotechnical Processes And Application,PEC,3,CE,TY
+CEY16,Foundation Engineering,PEC,3,CE,TY
+CEY19,Formwork For Concrete Structures,PEC,3,CE,TY
+HS202,Industrial Economics And Management,HSM,3,HS,TY
+CH215,Transport Phenomena,PCC,4,CH,TY
+CH216,Process Dynamics & Control ,PCC,4,CH,TY
+CH217,Process Equipment Design & Practice,PCC,4,CH,TY
+CH218,Process Engineering Economics ,PCC,3,CH,TY
+CH219,Process Control And Simulation Lab?IV,PCC,1.5,CH,LB
+CH220,Seminar,PAC,1,CH,LB
+CH221,Professional Ethics,MCC,0,CH,-
+CHH05,Special Topics In Chemical Engineering?IV,PCC,4,CH,TY
+CHM05,Process Dynamics And Reaction Engineering,PCC,4,CH,TY
+CHY09,Chemical Engineering Practice,PCC,3,CH,TY
+CHY12,Pollution Control In Process Industries,PCC,3,CH,TY
+CHY13,Bio Process Engineering,PEC,3,CH,TY
+CS225,Artificial Intelligence,PCC,3,CS,TY
+CS226,Parallel And Distributed Systems,PCC,4,CS,TY
+CS227,Data Science Essentials,PCC,4,CS,TY
+CS228,Artificial Intelligence Laboratory,PCC,1.5,CS,LB
+CS229,Seminar,PAC,1,CS,-
+CS230,Professional Ethics,MCC,0,CS,-
+CSH05,Deep Learning ,PCC,4,CS,TY
+CSM05,Network Technology,PCC,4,CS,TY
+CSY09,Cloud Computing,PEC,3,CS,TY
+CSY10,Machine Learning,PEC,3,CS,TY
+EC223,Wireless Communication,PCC,3,EC,TY
+EC224,Information Theory And Coding,PCC,3,EC,TY
+EC225,Embedded System,PCC,3,EC,TY
+EC226,Wireless Communication Laboratory,PCC,1.5,EC,LB
+EC227,Embedded System Laboratory,PCC,1.5,EC,LB
+EC228,Mini Project,PAC,1,EC,-
+EC229,Professional Ethics,MCC,0,EC,-
+ECH05,Next Generation Networks,PCC,4,EC,TY
+ECM05,Wireless Communication,PCC,4,EC,TY
+ECY14,Cryptography And Network Security ,PEC,3,EC,TY
+ECY16,Cognitive Radio Networks,PEC,3,EC,TY
+EE226,Power System Operation And Control,PCC,3,EE,TY
+EE227,Protection And Switchgear,PCC,3,EE,TY
+EE228,Solid State Drives,PCC,3,EE,TY
+EE229,Power Systems Laboratory,PCC,2,EE,LB
+EE230,Seminar,PAC,1,EE,-
+EE231,Professional Ethics,MCC,0,EE,-
+EEH05,Power Electronics Applications To Power Systems,PCC,4,EE,TY
+EEH05,Power Electronics Applications To Power Systems,PCC,4,EE,TY
+EEM05,Power Systems Engineering,PCC,4,EE,TY
+EEM05,Power Systems Engineering,PCC,4,EE,TY
+EEY09,Smart Grid,PEC,3,EE,TY
+EEY12,Power Quality,PEC,3,EE,TY
+EEY18,Utilization Of Electrical Energy,PEC,3,EE,TY
+EI225,PLC And DCS,PCC,4,EI,TY
+EI226,Analytical Instruments,PCC,4,EI,TY
+EI227,Industrial Measurements And Control Lab,PCC,1.5,EI,TY
+EI228,Seminar,PAC,1,EI,LB
+EI229,Mini Project,PAC,2,EI,LB
+EI230,Professional Ethics,MCC,0,EI,-
+EIH05,Cyber Security In Industrial Automation,PCC,4,EI,TY
+EIM05,Internet Of Things For Automation,PCC,4,EI,TY
+IT226,Artificial Intelligence,PCC,4,IT,TY
+IT227,Artificial Intelligence Laboratory,PCC,1.5,IT,LB
+IT228,Seminar,PAC,1,IT,LB
+IT229,Mini Project,PCC,1.5,IT,PR
+IT230,Professional Ethics,MCC,0,IT,-
+ITH05,Introduction To Data Science ,PCC,4,IT,TY
+ITM05,Iot And Python Programming,PCC,4,IT,TY
+ITY13,Data Mining And Data Warehousing,PEC,3,IT,TY
+ITY15,Information Security,PEC,3,IT,TY
+ITY16,Introduction To Machine Learning,PEC,3,IT,TY
+ME222,Operations Research,PCC,4,ME,TY
+ME223,Industrial Engineering And Management ,PCC,3,ME,TY
+ME224,Advanced Manufacturing Technology,PCC,4,ME,TY
+ME225,Professional Ethics,MCC,0,ME,   -
+MEH05,Surface Engineering,PCC,4,ME,TY
+MEM05,Process Planning And Cost Analysis,PCC,4,ME,TY
+MEY10,Cryogenic Engineering,PEC,3,ME,TY
+MEY12,Design Of Transmission Systems,PEC,3,ME,TY
+MEY14,Total Quality Management,PEC,3,ME,TY
+EIY07,VLSI Design,PEC,3,EI,TY
+EIY08,Biomedical Instrumentation,PEC,3,EI,TY
+EIY09,Instrumentation System Design,PEC,3,EI,TY
+EIY10,Digital Image Processing,PEC,3,EI,TY
+EIY11,Design Of Process Control System Components ,PEC,3,EI,TY
+EIY12,Power Plant Instrumentation ,PEC,3,EI,TY
+EIY13,Fiber Optics And Laser Instrumentation,PEC,3,EI,TY
+EIY14,MEMS,PEC,3,EI,TY
+EIY15,Instrumentation In Petrochemical Industry,PEC,3,EI,TY
+CE230,Comprehensive Test,PAC,1,CE,-
+CE231,Internship,PAC,2,CE,-
+CE232,Project Work,PAC,8,CE,-
+CH222,Comprehensive Test,PAC,1,CH,-
+CH223,Internship ,PAC,2,CH,-
+CH224,Project Work ,PAC,8,CH,PR
+CS231,Comprehensive Test,PAC,1,CS,-
+CS232,Internship,PAC,2,CS,-
+CS233,Project Work,PAC,8,CS,PR
+EC230,Comprehensive Test,PAC,1,EC,-
+EC231,Internship,PAC,2,EC,-
+EC232,Project Work,PAC,8,EC,PR
+EE232,Comprehensive Test,PAC,1,EE,-
+EE233,Internship,PAC,2,EE,-
+EE234,Project Work,PAC,8,EE,PR
+EI231,Comprehensive Test,PAC,1,EI,-
+EI232,Internship,PAC,2,EI,-
+EI233,Project Work,PAC,8,EI,-
+IT231,Comprehensive Test,PAC,1,IT,-
+IT232,Internship ,PAC,2,IT,-
+IT233,Project Work ,PAC,8,IT,PR
+ME226,Comprehensive Test,PAC,1,ME,-
+ME227,Internship,PAC,2,ME,-
+ME228,Project Work,PAC,8,ME,PR
+CEO01,Non Destructive Testing,OEC,3,CE,TY
+CEO02,Building Lighting And Ventilation Engineering,OEC,3,CE,TY
+CEO03,"Air, Water And Noise Pollution",OEC,3,CE,TY
+CEO04,Airport And Harbour Engineering,OEC,3,CE,TY
+CEO05,Fluid Mechanics And Strength Of Materials,OEC,3,CE,TY
+CHO01,Principles  Of  Process  Engineering,OEC,3,CH,TY
+CHO02,Green Chemistry And Engineering,OEC,3,CH,TY
+CHO03,Energy Engineering,OEC,3,CH,TY
+CHO04,Introduction To Semiconductor Processing,OEC,3,CH,TY
+CSO01,Introduction To Python Programming,OEC,3,CS,TY
+CSO02,Java Programming,OEC,3,CS,TY
+CSO03,Fundamentals Of Rdbms,OEC,3,CS,TY
+CSO04,Essentials Of Mobile Application Development,OEC,3,CS,TY
+CSO05,Introduction To Data Science,OEC,3,CS,TY
+ECO01,Consumer Electronics ,OEC,3,EC,TY
+ECO02,Communication Engineering,OEC,3,EC,TY
+ECO03,Cmos Vlsi Design,OEC,3,EC,TY
+ECO04,Internet Of Things,OEC,3,EC,TY
+ECO05,Wireless Communication Networks,OEC,3,EC,TY
+ECO06,Cyber Security,OEC,3,EC,TY
+EEO01,Power Generation Systems,OEC,3,EE,TY
+EEO02,System Dynamics,OEC,3,EE,TY
+EEO03,Fuzzy  And Neural Systems,OEC,3,EE,TY
+EIO01,Measurements And Instrumentation,OEC,3,EI,TY
+EIO02,Process Instrumentation,OEC,3,EI,TY
+EIO03,Principles Of Medical Electronics,OEC,3,EI,TY
+EIO04,Microcontroller Based System Design ,OEC,3,EI,TY
+EIO05,Fundamentals Of Mems,OEC,3,EI,TY
+ITO01,Business Process,OEC,3,IT,TY
+ITO02,Object Oriented Software Engineering,OEC,3,IT,TY
+ITO03,Introduction To Operating Systems,OEC,3,IT,TY
+ITO04,Introduction To Database,OEC,3,IT,TY
+ITO05,Web Engineering,OEC,3,IT,TY
+MEO01,Renewable Energy,OEC,3,ME,TY
+MEO02,Solar Power Engineering,OEC,3,ME,TY
+MEO03,Fluid And Thermal Machines,OEC,3,ME,TY
+MEO04,Marketing Management,OEC,3,ME,TY
+MEO05,Elements Of Project Management,OEC,3,ME,TY
+MEO06,Introduction To Nanoscience And Nanotechnology,OEC,3,ME,TY
+MEO07,Industrial Automation,OEC,3,ME,TY
+MEO08,Quantitative Techniques For Engineers,OEC,3,ME,TY
+MEO09,Finite Element Analysis,OEC,3,ME,TY
+EDM310,Orientation To Entrpreneurship,PCC,4,IEDC,TY
+EDM410,Customer Discovery And Prototyping,PCC,4,IEDC,TY
+EDM510,Development Of Business Model,PCC,4,IEDC,TY
+EDM610,New Venture Development,PCC,4,IEDC,TY
+EDM710,First Venture Project,PCC,4,IEDC,TY
+HSO01,Basic Course In English Communication,OEC,3,HS,TY
+HSO03,English For Competitive Exams,OEC,3,HS,TY
+HSO04 ,Introduction To Soft Skills,OEC,3,HS,TY

@@ -1,0 +1,43 @@
+insert into u_dept(dept_id, dept_name) values('CE', 'Civil Engineering'); 
+insert into u_dept(dept_id, dept_name) values('ME', 'Mechanical Engineering'); 
+insert into u_dept(dept_id, dept_name) values('EC', 'Electronics and Communication Engineering'); 
+insert into u_dept(dept_id, dept_name) values('CS', 'Computer Science and Engineering'); 
+insert into u_dept(dept_id, dept_name) values('EE', 'Electrical and Electronics Engineering'); 
+insert into u_dept(dept_id, dept_name) values('EI', 'Electronics and Instrumentation Engineering'); 
+insert into u_dept(dept_id, dept_name) values('CH', 'Chemical Engineering'); 
+insert into u_dept(dept_id, dept_name) values('IT', 'Information Technology'); 
+insert into u_dept(dept_id, dept_name) values('MT', 'Mechatronics'); 
+insert into u_dept(dept_id, dept_name) values('MB', 'MBA'); 
+insert into u_dept(dept_id, dept_name) values('HS', 'Humanities and Social Sciences'); 
+insert into u_dept(dept_id, dept_name) values('PH', 'Physics'); 
+insert into u_dept(dept_id, dept_name) values('CY', 'Chemistry'); 
+insert into u_dept(dept_id, dept_name) values('MA', 'Mathematics'); 
+insert into u_dept(dept_id, dept_name) values('FY', 'First Year Induction'); 
+insert into u_dept(dept_id, dept_name) values('IEDC', 'Incubation and Entrepreneurship Development Centre'); 
+
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(1, 'CE', 'Bachelor of Technology');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(2, 'ME', 'Bachelor of Technology');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(3, 'EC', 'Bachelor of Technology');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(4, 'CS', 'Bachelor of Technology');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(5, 'EE', 'Bachelor of Technology');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(6, 'EI', 'Bachelor of Technology');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(7, 'CH', 'Bachelor of Technology');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(8, 'IT', 'Bachelor of Technology');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(9, 'MT', 'Bachelor of Technology');
+
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(10, 'CE', 'Master of Technology - Structural Engineering');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(11, 'CE', 'Master of Technology - Environmental Engineering ');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(12, 'ME', 'Master of Technology - Energy Technology');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(13, 'ME', 'Master of Technology - Production Design and Manufacturing');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(14, 'EC', 'Master of Technology - Electronics and Communication Engineering ');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(15, 'EC', 'Master of Technology - Wireless Communication');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(16, 'CS', 'Master of Technology - Data Science');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(17, 'CS', 'Master of Technology - Information Security');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(18, 'EE', 'Master of Technology - Electrical Drives and Control');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(19, 'IT', 'Master of Technology - Internet of Things ');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(20, 'EI', 'Master of Technology - Instrumentation Engineering ');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(21, 'CS', 'Master of Computer Application ');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(22, 'PH', 'Master of Science - Materials Science and Technology');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(23, 'MB', 'Master of Business Administration - Innovation, Entrepreneurship and Venture Development ');
+insert into u_prgm(prgm_id, dept_id, prgm_name) values(24, 'MB', 'Master of Business Administration - International Business ');
+
