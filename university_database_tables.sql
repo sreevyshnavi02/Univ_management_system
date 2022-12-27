@@ -1,8 +1,8 @@
-DROP DATABASE univ;
+DROP DATABASE univ_trial_n_error;
 
-CREATE DATABASE univ;
+CREATE DATABASE univ_trial_n_error;
 
-USE univ;
+USE univ_trial_n_error;
 
 -- password to allow the hod to view the dept data - data of students, courses, faculty and to update certain fields
 create table u_dept(
@@ -25,7 +25,6 @@ drop constraint fk_dept_id;
 alter table u_prgm
 add constraint fk_dept_id foreign key(dept_id) 
 references u_dept(dept_id) on delete CASCADE;
-
 
 
 create table u_course(
@@ -145,8 +144,8 @@ create table u_course_regn(
     constraint check_attendance check(attendance <= 100),
     faculty_id varchar(10),
     constraint fk_faculty_id foreign key(faculty_id) references u_faculty(faculty_id),
-    active float default 1,
-    primary KEY (regno, course_code, sem, active)
+    session VARCHAR(5),
+    primary KEY (regno, course_code, sem, session)
 );
 
 
@@ -166,7 +165,7 @@ create table u_course_regn(
 
 
 
-create table u_exam_regn(
+create table u_external_marks(
     regno varchar(10),
     constraint fk_regno1 foreign key(regno) references u_student(regno),
     course_code varchar(10),
@@ -175,16 +174,16 @@ create table u_exam_regn(
     constraint check_ext_marks check(external_marks <= 60)
 );
 
-alter table u_exam_regn add grade char;
+alter table u_external_marks add grade char;
 
-alter table u_exam_regn add constraint check_grade check (grade in ('S', 'A', 'B', 'C', 'D', 'E', 'F', 'Z'));
-alter table u_exam_regn add gradept float;
-alter table u_exam_regn add constraint check_gradept check(gradept  in (10, 9, 8, 7, 6, 5, 0));
+alter table u_external_marks add constraint check_grade check (grade in ('S', 'A', 'B', 'C', 'D', 'E', 'F', 'Z'));
+alter table u_external_marks add gradept float;
+alter table u_external_marks add constraint check_gradept check(gradept  in (10, 9, 8, 7, 6, 5, 0));
 
-alter table u_exam_regn
+alter table u_external_marks
 add ACTIVE int;
 
-alter table u_exam_regn
+alter table u_external_marks
 add primary key(regno, course_code, active); 
 -- 1 - active; 0 - inactive
 

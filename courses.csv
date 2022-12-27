@@ -1,4 +1,3 @@
-course_code,course_name,course_catg,credits,dept_id,course_type
 CY201,Chemistry   ,BSC,4,CY,TY
 CY202,Chemistry Laboratory,BSC,1.5,CY,LB
 FY201,Induction Programme,MCC,0,FY,MC
@@ -59,7 +58,6 @@ EE208,Electronics Laboratory-I,PCC,1.5,EE,LB
 EE209,Electrical Machines Laboratory-I,PCC,1.5,EE,LB
 EEH01,Energy Engineering,PCC,4,EE,TY
 EEM01,Electrical Circuits And Measurements,PCC,4,EE,TY
-MA204,"Transforms, Partial Differential Equations And Statistics",BSC,4,MA,TY
 EI201,Circuit Theory,PCC,4,EI,TY
 EI202,Electronic Circuits,PCC,3,EI,TY
 EI203,Electronic Design And Fabrication,PCC,4,EI,TY
@@ -124,7 +122,6 @@ EC212,Analog Communication Laboratory,PCC,1.5,EC,LB
 ECH02,Medical Electronics And Informatics,PCC,4,EC,TY
 ECM02,Analog And Digital Circuits,PCC,4,EC,TY
 ECY02,Computer Architecture And Organization,PEC,3,EC,TY
-CS234,Data Structures And Object Oriented Programming,ESC,3,CS,TY
 CS235,Data Structures And Object Oriented Programming Laboratory,ESC,1.5,CS,LB
 EE210,Analog Electronics,PCC,3,EE,TY
 EE211,Pulse And Digital Circuits,PCC,3,EE,TY
@@ -136,7 +133,6 @@ EEM02,Analog And Digital Electronics,PCC,4,EE,TY
 EI207,Linear Integrated Circuits,PCC,3,EI,TY
 EI208,Electrical And Electronics Instruments,PCC,3,EI,TY
 EI209,Transducers And Measurements System,PCC,3,EI,TY
-CS234,Data Structures And Oops,ESC,3,CS,TY
 EI210,Linear And Integrated Circuits Lab,PCC,1.5,EI,LB
 CS235,Data Structures And Oops Lab,ESC,1.5,CS,LB
 EI211,Transducers And Measurements System Lab,PCC,1.5,EI,LB
