@@ -74,7 +74,15 @@
             }
         } 
         else{
-            echo('Upload Karo');
+            // upload csv file
+
+            // get a file as input
+
+            echo("<form action = 'file_upload.php' method = 'POST' enctype = 'multipart/form-data'>
+            <input type = 'file' name = 'file_upload'>
+            <input type = 'submit' value = 'submit'>
+            </form>");
+            
         }
     } 
 ?>
