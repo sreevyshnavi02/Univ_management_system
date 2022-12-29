@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.header{
+    background-color: rgb(62, 86, 98);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.header > h1{
+    margin: 1rem;
+}
+
+.get_input_details, .upload_marks, .disp_con_att{
+    margin: 1rem auto 1rem auto;
+    height: fit-content;
+    width: 75%;
+    padding: 1rem;
+    border: 1px;
+    border-radius: 1px;
+    background-color: rgb(192, 206, 206);
+    display: block;
+    align-items: center;
+}
+
+.input_course_code, .input_session{
+    padding: 1rem;
+}
+
+.submit_option, .submit_marks_attendance{
+    background-color: rgb(72, 69, 69);
+    color: white;
+    padding: 1px;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.marks_table, tr, th, td{
+    border: 1px solid black;
+    padding: 0.5rem;
+}
