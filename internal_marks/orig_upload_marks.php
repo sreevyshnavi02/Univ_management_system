@@ -1,6 +1,6 @@
 <?php 
 
-    include 'header.php';
+    include '../header.php';
     // $_SESSION['regno'] = '';
     
     if(isset($_POST['submit_marks_attendance'])){

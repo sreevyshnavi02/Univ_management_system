@@ -1,7 +1,4 @@
-<?php include '../header.php'; 
-
-    // $int_marks_array = array();
-?>
+<?php include '../header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,16 +12,17 @@
         function ajax_post(){
             // getting the marks sand attendance from the form
             var data = new FormData();
-            
-            <?php print_r($_POST['int_marks_array']); ?>
-
+            console.log("Regno: ");
+            // console.log(document.getElementById(i).getElementById("regno").textContent);
+            console.log(document.getElementById("marks").value);
+            console.log(document.getElementById("attendance").value);
             data.append("regno", document.getElementById("regno").textContent);
             data.append("marks", document.getElementById("marks").value);
             data.append("attendance", document.getElementById("attendance").value);
 
             //sending an XML HTTP req
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "update_marks_to_db.php");
+            xhr.open("POST", "dummy.php");
             xhr.onload = function(){
                 console.log("Response from dummy.php");
                 console.log(this.response);
@@ -57,45 +55,6 @@
                     and c.session = '$_POST[session]' 
                     and c.regno = s.regno;"
                 );
-                echo("
-                <table class='marks_table'>
-                <tr>
-                    <th>Regno</th>
-                    <th>Name</th>
-                    <th>Internal Marks(Out of 40)</th>
-                    <th>Attendance(in %)</th>
-                </tr>
-                <script> var i = 1; </script>");
-            
-
-                foreach($get_enrolled_students as $stud_details){
-                    // echo("Inside foreach");
-                    array_push(
-                        $int_marks_array, 
-                        array($stud_details['regno'], $stud_details['sname'], -1, -1)
-                    );
-                }
-        
-                echo("<form method = 'POST' action = '".$_SERVER['PHP_SELF']."'> ");
-                foreach($int_marks_array as $i => $row){
-                    echo("
-                    <tr>
-                        <td>".$row[0]."</td>
-                        <td>".$row[1]."</td>
-                        <td><input type = 'number' min = 0 max = 40 id = 'int_marks'></td>
-                        <td><input type = 'number' min = 0 max = 100 id = 'attendance'></td>
-                    </tr>
-                    ");
-                    $row[2] = "<script>document.getElementById('int_marks')</script>";
-                    $row[3] = "<script>document.getElementById('attendance')</script>";
-                }
-                echo("</table>");
-                $_POST['int_marks_array'] = $int_marks_array;
-                echo("<input type = 'submit' name='submit_marks_attendance'>");
-                echo("</table>");
-                echo("</form>");
-
-
             } 
             else{
                 echo('csv Upload Karo');
@@ -104,6 +63,44 @@
     
     ?>
     
-    
+    <table class='marks_table'>
+        <tr>
+            <th>Regno</th>
+            <th>Name</th>
+            <th>Internal Marks(Out of 40)</th>
+            <th>Attendance(in %)</th>
+            <th></th>
+        </tr>
+        <script> var i = 1; </script>
+        <?php
+            foreach($get_enrolled_students as $stud_details){
+        ?>
+                <form id = "row_form" onsubmit = "return ajax_post()">
+                
+                <?php
+                echo("<tr id = 'temp'>");
+                ?>
+                <script>
+                    i++;
+                    console.log("Current value of i = ", i);
+                    document.getElementById('temp').id = i;
+                </script>
+                <?php
+                echo("<td id = 'regno'>".$stud_details['regno']."</td>");
+                echo("<td>".$stud_details['sname']."</td>");
+                echo("<td><input type='text' id='marks'></td>");
+                echo("<td><input type='text' id='attendance'></td>");
+                echo("<td><input type='submit' name='submit_marks_attendance' class='submit_marks_attendance' value='Done'>");
+                echo("</tr>");
+                $_SESSION['regno'] = $stud_details['regno'];
+                $_SESSION['session'] = $_POST['session'];
+                $_SESSION['course_code'] = $_POST['course_code'];
+                echo("</form>");
+                // echo("Before insert");  
+            }
+            echo("</table>");
+        ?>
+    <!-- <input type="submit" value = "Done"> -->
+    </form>
 </body>
 </html>
