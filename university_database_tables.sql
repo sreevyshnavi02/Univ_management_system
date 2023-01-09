@@ -1,153 +1,131 @@
-DROP DATABASE univ_trial_n_error;
+DROP DATABASE UNIV_TRIAL_N_ERROR;
 
-CREATE DATABASE univ_trial_n_error;
+CREATE DATABASE UNIV_TRIAL_N_ERROR;
 
-USE univ_trial_n_error;
+USE UNIV_TRIAL_N_ERROR;
 
 -- password to allow the hod to view the dept data - data of students, courses, faculty and to update certain fields
-create table u_dept(
-    dept_id varchar(5) PRIMARY KEY,
-    password varchar(20),
-    dept_name varchar(100) NOT null
+CREATE TABLE U_DEPT(
+    DEPT_ID VARCHAR(5) PRIMARY KEY,
+    PASSWORD VARCHAR(20),
+    DEPT_NAME VARCHAR(100) NOT NULL
 );
 
-create table u_prgm(
-    prgm_id float(2, 0) PRIMARY key,
-    dept_id varchar(5),
-    constraint fk_dept_id foreign key(dept_id) references u_dept(dept_id),
-    prgm_name varchar(100)
+CREATE TABLE U_PRGM(
+    PRGM_ID FLOAT(2, 0) PRIMARY KEY,
+    DEPT_ID VARCHAR(5),
+    CONSTRAINT FK_DEPT_ID FOREIGN KEY(DEPT_ID) REFERENCES U_DEPT(DEPT_ID),
+    PRGM_NAME VARCHAR(100)
 );
 
 -- a prgm cannot be continued when the dept is closed, so cascade delete
-alter table u_prgm
-drop constraint fk_dept_id;
+ALTER TABLE U_PRGM DROP CONSTRAINT FK_DEPT_ID;
 
-alter table u_prgm
-add constraint fk_dept_id foreign key(dept_id) 
-references u_dept(dept_id) on delete CASCADE;
+ALTER TABLE U_PRGM ADD CONSTRAINT FK_DEPT_ID FOREIGN KEY(DEPT_ID) REFERENCES U_DEPT(DEPT_ID) ON DELETE CASCADE;
 
-
-create table u_course(
-    course_code varchar(10) PRIMARY KEY,
-    course_name VARCHAR(200),
-    course_catg varchar(5),
-    -- prereq varchar(10),
-    -- constraint fk_prereq foreign key(prereq) references u_course(course_code),
-    credits float(3, 2),
-    dept_id varchar(5),
-    foreign key(dept_id) references u_dept(dept_id)
+CREATE TABLE U_COURSE(
+    COURSE_CODE VARCHAR(10) PRIMARY KEY,
+    COURSE_NAME VARCHAR(200),
+    COURSE_CATG VARCHAR(5),
+ -- prereq varchar(10),
+ -- constraint fk_prereq foreign key(prereq) references u_course(course_code),
+    CREDITS FLOAT(3, 2),
+    DEPT_ID VARCHAR(5),
+    FOREIGN KEY(DEPT_ID) REFERENCES U_DEPT(DEPT_ID)
 );
 
-
-
-alter table u_course
-add course_type varchar(20);
-
+ALTER TABLE U_COURSE ADD COURSE_TYPE VARCHAR(20);
 
 -- compulsory courses part of each programme
-create table u_prgm_comp_course(    
-    prgm_id float(2, 0),
-    constraint fk_prgm_id foreign key(prgm_id) references u_prgm(prgm_id),
-    course_code varchar(10),
-    constraint fk_course_code foreign key(course_code) references u_course(course_code),
-    sem int
+CREATE TABLE U_PRGM_COMP_COURSE(
+    PRGM_ID FLOAT(2, 0),
+    CONSTRAINT FK_PRGM_ID FOREIGN KEY(PRGM_ID) REFERENCES U_PRGM(PRGM_ID),
+    COURSE_CODE VARCHAR(10),
+    CONSTRAINT FK_COURSE_CODE FOREIGN KEY(COURSE_CODE) REFERENCES U_COURSE(COURSE_CODE),
+    SEM INT
 );
 
 -- elective courses part of each programme
 
 -- includes open elective for other dept students + prgm elective offered within the dept
-create table u_prgm_elective_course(
-    prgm_id float(2, 0),
-    constraint fk_prgm_id2 foreign key(prgm_id) references u_prgm(prgm_id),
-    course_code varchar(10),
-    constraint fk_course_code2 foreign key(course_code) references u_course(course_code),
-    sem int, 
-    academic_yr_start float(4, 0),
-    academic_yr_end float(4, 0)
+CREATE TABLE U_PRGM_ELECTIVE_COURSE(
+    PRGM_ID FLOAT(2, 0),
+    CONSTRAINT FK_PRGM_ID2 FOREIGN KEY(PRGM_ID) REFERENCES U_PRGM(PRGM_ID),
+    COURSE_CODE VARCHAR(10),
+    CONSTRAINT FK_COURSE_CODE2 FOREIGN KEY(COURSE_CODE) REFERENCES U_COURSE(COURSE_CODE),
+    SEM INT,
+    ACADEMIC_YR_START FLOAT(4, 0),
+    ACADEMIC_YR_END FLOAT(4, 0)
 );
 
-alter table u_prgm_elective_course
-add offered varchar(5),
-add being_run varchar(5),
-add no_of_students float;
+ALTER TABLE U_PRGM_ELECTIVE_COURSE ADD OFFERED VARCHAR(5), ADD BEING_RUN VARCHAR(5), ADD NO_OF_STUDENTS FLOAT;
 
-
-create table u_faculty(
-    faculty_id varchar(10) PRIMARY key,
-    password varchar(10),
-    fname varchar(40),
-    dept_id varchar(5),
-    constraint fk_dept_id2 foreign key(dept_id) references u_dept(dept_id),
-    designation varchar(50)
+CREATE TABLE U_FACULTY(
+    FACULTY_ID VARCHAR(10) PRIMARY KEY,
+    PASSWORD VARCHAR(10),
+    FNAME VARCHAR(40),
+    DEPT_ID VARCHAR(5),
+    CONSTRAINT FK_DEPT_ID2 FOREIGN KEY(DEPT_ID) REFERENCES U_DEPT(DEPT_ID),
+    DESIGNATION VARCHAR(50)
 );
 
+ALTER TABLE U_FACULTY ADD EMAIL VARCHAR(100);
 
-
-alter table u_faculty
-add email varchar(100);
-
-
-create table u_student(
-    regno varchar(10) PRIMARY key,
-    password varchar(10),
-    sname VARCHAR(100),
-    gender char,
-    dob VARCHAR(15),
-    yoj float(4, 0),
-    credits_earned float(5, 2),
-    prgm_id float(2, 0),
-    constraint fk_prgm_id3 foreign key(prgm_id) references u_prgm(prgm_id)
-    -- guide_id varchar(10),  -- for a PhD student 
-    -- constraint fk_guide_id foreign key(guide_id) references u_faculty(faculty_id)
+CREATE TABLE U_STUDENT(
+    REGNO VARCHAR(10) PRIMARY KEY,
+    PASSWORD VARCHAR(10),
+    SNAME VARCHAR(100),
+    GENDER CHAR,
+    DOB VARCHAR(15),
+    YOJ FLOAT(4, 0),
+    CREDITS_EARNED FLOAT(5, 2),
+    PRGM_ID FLOAT(2, 0),
+    CONSTRAINT FK_PRGM_ID3 FOREIGN KEY(PRGM_ID) REFERENCES U_PRGM(PRGM_ID)
+ -- guide_id varchar(10),  -- for a PhD student
+ -- constraint fk_guide_id foreign key(guide_id) references u_faculty(faculty_id)
 );
 
+ALTER TABLE U_STUDENT ADD CURR_SEM INT;
 
-alter table U_STUDENT
-add curr_sem INT;
+ALTER TABLE U_STUDENT ADD HISTORY_OF_ARREAR INT CHECK (HISTORY_OF_ARREAR IN (0, 1));
 
-
-alter table u_student
-add history_of_arrear int check (history_of_arrear IN (0, 1));	-- 0- no arrear, 1- yes(had an arrear)
+-- 0- no arrear, 1- yes(had an arrear)
 
 -- current backlogs which haven't been cleared yet
-ALTER TABLE u_student
-add backlogs int check (backlogs IN (0, 1));
+ALTER TABLE U_STUDENT ADD BACKLOGS INT CHECK (BACKLOGS IN (0, 1));
 
-alter table u_student
-add email varchar(100) unique;
+ALTER TABLE U_STUDENT ADD EMAIL VARCHAR(100) UNIQUE;
 
-alter table u_student
-add active float;
+ALTER TABLE U_STUDENT ADD ACTIVE FLOAT;
 
-
-create table u_gpa_cgpa(
-    regno varchar(10),
-    constraint fk_regno2 foreign key(regno) references u_student(regno),
-    sem float,
-    gpa float(4, 2),
-    cgpa float(4, 2)
+CREATE TABLE U_GPA_CGPA(
+    REGNO VARCHAR(10),
+    CONSTRAINT FK_REGNO2 FOREIGN KEY(REGNO) REFERENCES U_STUDENT(REGNO),
+    SEM FLOAT,
+    GPA FLOAT(4, 2),
+    CGPA FLOAT(4, 2)
 );
 
-alter table u_gpa_cgpa
-add num_of_credits_earned float(4, 1); -- to store the float of credits earned in that semester alone
+ALTER TABLE U_GPA_CGPA ADD NUM_OF_CREDITS_EARNED FLOAT(4, 1);
+
+-- to store the float of credits earned in that semester alone
 
 
-create table u_course_regn(
-    regno varchar(10),
-    constraint fk_regno foreign key(regno) references u_student(regno),
-    course_code varchar(10),
-    constraint fk_course_code3 foreign key(course_code) references u_course(course_code),
-    sem float,
-    internal_marks float(3, 1),
-    constraint check_int_marks check(internal_marks <= 40),
-    attendance float(4, 1),
-    constraint check_attendance check(attendance <= 100),
-    faculty_id varchar(10),
-    constraint fk_faculty_id foreign key(faculty_id) references u_faculty(faculty_id),
-    session VARCHAR(5),
-    primary KEY (regno, course_code, sem, session)
+CREATE TABLE U_COURSE_REGN(
+    REGNO VARCHAR(10),
+    CONSTRAINT FK_REGNO FOREIGN KEY(REGNO) REFERENCES U_STUDENT(REGNO),
+    COURSE_CODE VARCHAR(10),
+    CONSTRAINT FK_COURSE_CODE3 FOREIGN KEY(COURSE_CODE) REFERENCES U_COURSE(COURSE_CODE),
+    SEM FLOAT,
+    INTERNAL_MARKS FLOAT(3, 1),
+    CONSTRAINT CHECK_INT_MARKS CHECK(INTERNAL_MARKS <= 40),
+    ATTENDANCE FLOAT(4, 1),
+    CONSTRAINT CHECK_ATTENDANCE CHECK(ATTENDANCE <= 100),
+    FACULTY_ID VARCHAR(10),
+    CONSTRAINT FK_FACULTY_ID FOREIGN KEY(FACULTY_ID) REFERENCES U_FACULTY(FACULTY_ID),
+    SESSION VARCHAR(5),
+    PRIMARY KEY (REGNO, COURSE_CODE, SEM, SESSION)
 );
-
 
 -- create table course_offering(
 --     course_code varchar(10),
@@ -165,104 +143,84 @@ create table u_course_regn(
 
 
 
-create table u_external_marks(
-    regno varchar(10),
-    constraint fk_regno1 foreign key(regno) references u_student(regno),
-    course_code varchar(10),
-    constraint fk_course_code1 foreign key(course_code) references u_course(course_code),
-    external_marks float(3, 1),
-    constraint check_ext_marks check(external_marks <= 60)
+CREATE TABLE U_EXTERNAL_MARKS(
+    REGNO VARCHAR(10),
+    CONSTRAINT FK_REGNO1 FOREIGN KEY(REGNO) REFERENCES U_STUDENT(REGNO),
+    COURSE_CODE VARCHAR(10),
+    CONSTRAINT FK_COURSE_CODE1 FOREIGN KEY(COURSE_CODE) REFERENCES U_COURSE(COURSE_CODE),
+    EXTERNAL_MARKS FLOAT(3, 1),
+    CONSTRAINT CHECK_EXT_MARKS CHECK(EXTERNAL_MARKS <= 60)
 );
 
-alter table u_external_marks add grade char;
+ALTER TABLE U_EXTERNAL_MARKS ADD GRADE CHAR;
 
-alter table u_external_marks add constraint check_grade check (grade in ('S', 'A', 'B', 'C', 'D', 'E', 'F', 'Z'));
-alter table u_external_marks add gradept float;
-alter table u_external_marks add constraint check_gradept check(gradept  in (10, 9, 8, 7, 6, 5, 0));
+ALTER TABLE U_EXTERNAL_MARKS ADD CONSTRAINT CHECK_GRADE CHECK (GRADE IN ('S', 'A', 'B', 'C', 'D', 'E', 'F', 'Z'));
 
-alter table u_external_marks
-ADD SESSION VARCHAR(5);
+ALTER TABLE U_EXTERNAL_MARKS ADD GRADEPT FLOAT;
 
-alter table u_external_marks
-add primary key(regno, course_code, session); 
+ALTER TABLE U_EXTERNAL_MARKS ADD CONSTRAINT CHECK_GRADEPT CHECK(GRADEPT IN (10, 9, 8, 7, 6, 5, 0));
+
+ALTER TABLE U_EXTERNAL_MARKS ADD SESSION VARCHAR(5);
+
+ALTER TABLE U_EXTERNAL_MARKS ADD PRIMARY KEY(REGNO, COURSE_CODE, SESSION);
+
 -- 1 - active; 0 - inactive
 
 
 
 -- To be written
-create table u_administration(
-    -- includes COE, Dean Academics, etc
-    f_id varchar(10),
-    constraint fk_fid foreign key(f_id) references u_faculty(faculty_id),
-    position varchar(30), -- eg. COE, Dean Academics
-    username varchar(20),
-    password varchar(20)
+CREATE TABLE U_ADMINISTRATION(
+ -- includes COE, Dean Academics, etc
+    F_ID VARCHAR(10),
+    CONSTRAINT FK_FID FOREIGN KEY(F_ID) REFERENCES U_FACULTY(FACULTY_ID),
+    POSITION VARCHAR(30), -- eg. COE, Dean Academics
+    USERNAME VARCHAR(20),
+    PASSWORD VARCHAR(20)
 );
-
 
 -- a temporary purpose table used before allotting courses
-create table u_hm_preregistration(
-    regno varchar(10),
-    constraint fk_regno4 foreign key(regno) references u_student(regno),
-    opt1_prgm_id float,
-    constraint fk_prgm_id_hm1 foreign key(opt1_prgm_id) references u_prgm(prgm_id),
-    opt2_prgm_id float,
-    constraint fk_prgm_id_hm2 foreign key(opt2_prgm_id) references u_prgm(prgm_id),
-    opt3_prgm_id float,
-    constraint fk_prgm_id_hm3 foreign key(opt3_prgm_id) references u_prgm(prgm_id)
+CREATE TABLE U_HM_PREREGISTRATION(
+    REGNO VARCHAR(10),
+    CONSTRAINT FK_REGNO4 FOREIGN KEY(REGNO) REFERENCES U_STUDENT(REGNO),
+    OPT1_PRGM_ID FLOAT,
+    CONSTRAINT FK_PRGM_ID_HM1 FOREIGN KEY(OPT1_PRGM_ID) REFERENCES U_PRGM(PRGM_ID),
+    OPT2_PRGM_ID FLOAT,
+    CONSTRAINT FK_PRGM_ID_HM2 FOREIGN KEY(OPT2_PRGM_ID) REFERENCES U_PRGM(PRGM_ID),
+    OPT3_PRGM_ID FLOAT,
+    CONSTRAINT FK_PRGM_ID_HM3 FOREIGN KEY(OPT3_PRGM_ID) REFERENCES U_PRGM(PRGM_ID)
 );
 
+ALTER TABLE U_HM_PREREGISTRATION ADD CGPA FLOAT(4, 2);
 
-alter table u_hm_preregistration
-add cgpa float(4, 2);
-
-
-create table academic_calendar(
-    sem INT PRIMARY key,
-    sem_begin date,
-    course_regn_begin date,
-    course_regn_close date, -- and 0th class committee meeting
-
-    first_test_begin date,
-    first_test_end date,
-    first_test_eval date,
-
-    
-    second_test_begin date,
-    second_test_end date,
-    second_test_eval date,
-    
-    third_test_begin date,
-    third_test_end date,
-    
-    model_prac_begin date,
-    model_prac_end date,
-    exam_regn_begin date,
-    last_working_day date,  -- internal marks consolidation and publication
-
-    sem_prac_begin date,
-    sem_prac_end date,
-
-    sem_theory_begin date,
-    sem_theory_end date,
-
-    vacation_begin date,
-    vacation_end date
+CREATE TABLE ACADEMIC_CALENDAR(
+    SEM INT PRIMARY KEY,
+    SEM_BEGIN DATE,
+    COURSE_REGN_BEGIN DATE,
+    COURSE_REGN_CLOSE DATE, -- and 0th class committee meeting
+    FIRST_TEST_BEGIN DATE,
+    FIRST_TEST_END DATE,
+    FIRST_TEST_EVAL DATE,
+    SECOND_TEST_BEGIN DATE,
+    SECOND_TEST_END DATE,
+    SECOND_TEST_EVAL DATE,
+    THIRD_TEST_BEGIN DATE,
+    THIRD_TEST_END DATE,
+    MODEL_PRAC_BEGIN DATE,
+    MODEL_PRAC_END DATE,
+    EXAM_REGN_BEGIN DATE,
+    LAST_WORKING_DAY DATE, -- internal marks consolidation and publication
+    SEM_PRAC_BEGIN DATE,
+    SEM_PRAC_END DATE,
+    SEM_THEORY_BEGIN DATE,
+    SEM_THEORY_END DATE,
+    VACATION_BEGIN DATE,
+    VACATION_END DATE
 );
 
-
-create table u_exam_regn(
-	regno varchar(10),
-	constraint fk_regno5 foreign key(regno) references u_student(regno),
-	session varchar(5),
-	consolidated_attendance float,
-	transaction_id varchar(30)
+CREATE TABLE U_EXAM_REGN(
+    REGNO VARCHAR(10),
+    CONSTRAINT FK_REGNO5 FOREIGN KEY(REGNO) REFERENCES U_STUDENT(REGNO),
+    SESSION VARCHAR(5),
+    CONSOLIDATED_ATTENDANCE FLOAT,
+    TRANSACTION_ID VARCHAR(30)
 );
-
-
-ALTER TABLE u_exam_regn
-ADD eligible_for_exam INT; -- 0 - NO, 1 - yesu_exam_regn
-
-
-alter table u_exam_regn
-add constraint pk_u_exam_regn primary key(regno, session);
