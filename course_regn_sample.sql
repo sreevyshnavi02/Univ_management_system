@@ -1,20 +1,383 @@
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1004', 'CE201', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1004', 'CS201', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1004', 'CS202', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1004', 'EE201', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1004', 'EE202', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1004', 'FY201', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1004', 'MA201', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1004', 'ME202', 1, '18B');
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1004',
+    'CE201',
+    1,
+    '18B'
+);
 
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1005', 'CE201', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1005', 'CS201', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1005', 'CS202', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1005', 'EE201', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1005', 'EE202', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1005', 'FY201', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1005', 'MA201', 1, '18B');
-insert into u_course_regn(regno, course_code, sem , session) values('18CE1005', 'ME202', 1, '18B');
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1004',
+    'CS201',
+    1,
+    '18B'
+);
 
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1004',
+    'CS202',
+    1,
+    '18B'
+);
 
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1004',
+    'EE201',
+    1,
+    '18B'
+);
 
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1004',
+    'EE202',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1004',
+    'FY201',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1004',
+    'MA201',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1004',
+    'ME202',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1005',
+    'CE201',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1005',
+    'CS201',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1005',
+    'CS202',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1005',
+    'EE201',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1005',
+    'EE202',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1005',
+    'FY201',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1005',
+    'MA201',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    COURSE_CODE,
+    SEM,
+    SESSION
+) VALUES(
+    '18CE1005',
+    'ME202',
+    1,
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    1,
+    'CE201',
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    1,
+    'CS201',
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    1,
+    'CS202',
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    1,
+    'EE201',
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    1,
+    'EE202',
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    1,
+    'FY201',
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    1,
+    'MA201',
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    1,
+    'ME202',
+    '18B'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    2,
+    'CS201',
+    '19A'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    2,
+    'CY201',
+    '19A'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    2,
+    'CY202',
+    '19A'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    2,
+    'HS201',
+    '19A'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    2,
+    'MA202',
+    '19A'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    2,
+    'ME201',
+    '19A'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    2,
+    'PH201',
+    '19A'
+);
+
+INSERT INTO U_COURSE_REGN(
+    REGNO,
+    SEM,
+    COURSE_CODE,
+    SESSION
+) VALUES(
+    '18CE1002',
+    2,
+    'PH202',
+    '19A'
+);

@@ -1,0 +1,40 @@
+.ccname {
+  color: black;
+  /* margin-left: 25%; */
+  padding: 20px;
+  text-align: center;
+}
+/* .imgg{
+    margin: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    float:left;    
+}
+.image{
+    height: 85%;
+    width: 65%;
+} */
+.college_dets {
+  /* background-color: aquamarine; */
+}
+.marks_table,
+td,
+th,
+tr {
+  margin: auto;
+  padding: 5px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+.marks_table {
+  width: 100%;
+  margin-bottom: 10%;
+}
+#button {
+  /* width: 300px; */
+  margin-left: 25%;
+}
+.course_dets {
+  margin: 8%;
+}

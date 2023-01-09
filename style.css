@@ -1,46 +1,103 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.header{
-    background-color: rgb(62, 86, 98);
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-bottom: 2rem;
+.header {
+  background-color: rgb(62, 86, 98);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 0 2rem 0;
+  display: flex;
 }
 
-.header > h1{
-    margin: 1rem;
+.univ_name {
+  margin: 1rem;
+  text-align: center;
+  width: 90%;
 }
 
-.get_input_details, .upload_marks, .disp_con_att{
-    margin: 1rem auto 1rem auto;
-    height: fit-content;
-    width: 75%;
-    padding: 1rem;
-    border: 1px;
-    border-radius: 1px;
-    background-color: rgb(192, 206, 206);
-    display: block;
-    align-items: center;
+.logo > img {
+  width: 100%;
+  height: auto;
 }
 
-.input_course_code, .input_session{
-    padding: 1rem;
+.get_input_details,
+.upload_marks,
+.get_csv_file,
+.get_session_form {
+  margin: 1rem auto 1rem auto;
+  height: fit-content;
+  width: 75%;
+  padding: 1rem;
+  border: 1px;
+  border-radius: 1px;
+  background-color: rgb(192, 206, 206);
+  display: block;
+  align-items: center;
 }
 
-.submit_option, .submit_marks_attendance{
-    background-color: rgb(72, 69, 69);
-    color: white;
-    padding: 1px;
-    margin-left: 5%;
-    cursor: pointer;
+.input_course_code,
+.input_session {
+  padding: 1rem;
 }
 
-.marks_table, tr, th, td{
-    border: 1px solid black;
-    padding: 0.5rem;
+.submit_option,
+.submit_marks_attendance,
+.submit_ext_marks,
+.btnn,
+.submit_session,
+.download_pdf {
+  background-color: rgb(72, 69, 69);
+  color: white;
+  padding: 1%;
+  margin: 1rem 40% 1rem 40%;
+  cursor: pointer;
+}
+
+/* buttons on home page */
+.btnn {
+  font-size: 1.5em;
+  min-width: 50%;
+  margin: 1rem auto 1rem auto;
+  display: block;
+}
+
+/* colors of the links */
+a {
+  text-decoration: none;
+}
+a:link > button {
+  color: white;
+}
+
+a:visited > button {
+  color: rgb(221, 250, 184);
+}
+
+a:hover > button {
+  color: yellow;
+}
+
+.course_details {
+  text-align: center;
+  margin: 1rem auto 1rem auto;
+  font-weight: bold;
+  background-color: rgb(192, 206, 206);
+  padding: 1rem 0 1rem 0;
+}
+
+.marks_table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr,
+th,
+td {
+  border: 1px solid black;
+  padding: 0.5rem;
+  text-align: center;
 }

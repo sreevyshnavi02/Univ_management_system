@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include '../header.php'; ?>
-    <form action="update_int_marks.php" method="post">
+    <form action="update_ext_marks.php" method="post">
         <div class = get_input_details>
             <!-- Course code as input -->
             <div class="input_course_code">
