@@ -227,3 +227,7 @@ CREATE TABLE U_EXAM_REGN(
     CONSOLIDATED_ATTENDANCE FLOAT,
     TRANSACTION_ID VARCHAR(30)
 );
+
+ALTER TABLE u_exam_regn 
+ADD eligible_for_exam INT;
+-- 0 - not eligible, 1 - eligible
